@@ -1,0 +1,249 @@
+section {
+  padding-top: 5rem;
+}
+
+#header {
+  z-index: 1000;
+  padding: 7px 0;
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 55px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  color: #ff0000;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2b00ff;
+}
+
+#hero {
+  width: 100%;
+  height: 70vh;
+  margin-top: 70px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: black;
+}
+
+#hero h2 {
+  color: #484848;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+.btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #ff0000;
+  border: 2px solid #0000ff;
+  background-color: #ffffff;
+}
+
+.container img {
+  margin-left: 50px;
+}
+
+.brand-carousel {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-item {
+  display: inline-block;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.scrolling-item img {
+  max-width: 150px;
+  max-height: 100px;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #ffffffd1;
+  box-shadow: 0 0 29px 0 rgba(0, 4, 255, 0.692);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #e1f0fab2;
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.services .icon-box:hover::before {
+  background: #d034db;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20%;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services .icon img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+  color: #fff;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon-img {
+  filter: brightness(0) invert(1);
+}
+
+.container-xxl {
+  box-shadow: 0 0 29px 0 rgba(0, 4, 255, 0.692);
+}
+
+.row .vison {
+  box-shadow: 0 0 29px 0 rgba(0, 4, 255, 0.692);
+}
+
+#footer {
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(255, 157, 0, 0.692);
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #0000ff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+  color: #222222;
+}
+
+.copyright {
+  color: #d034db;
+}
+
+#footer .footer-links a {
+  color: #222222;
+  padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+  color: #ff0000;
+}
